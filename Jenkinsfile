@@ -1,19 +1,21 @@
 pipeline {
-  stage("build") {
-    steps() {
-      echo "building the application..."
+  stages {
+      stage("build") {
+      steps() {
+        echo "building the application..."
+      }
     }
+
+    stage("test") {
+      steps() {
+        echo "testing the application..."
+      }
+    } 
+
+    stage("deploy") {
+      steps() {
+        echo "deploying the application..."
+      }
+    } 
   }
-  
-  tage("test") {
-    steps() {
-      echo "testing the application..."
-    }
-  } 
-  
-  tage("deploy") {
-    steps() {
-      echo "deploying the application..."
-    }
-  } 
 }
