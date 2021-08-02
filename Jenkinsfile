@@ -1,6 +1,9 @@
 pipeline {
 
 	agent any
+	environment {
+		VERSION = '1.3.0'
+	}
 
 	stages{
 
@@ -8,6 +11,7 @@ pipeline {
 
 			steps {
 				echo 'building the application...'
+				echo 'building version is ${VERSION}'
 			}
 		}
 
