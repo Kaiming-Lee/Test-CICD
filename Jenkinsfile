@@ -3,6 +3,7 @@ pipeline {
 	agent any
 	environment {
 		VERSION = '1.3.1'
+		BRANCH = 'dev'
 	}
 
 	stages{
